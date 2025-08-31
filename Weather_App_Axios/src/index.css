@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+.weather-container {
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 6px solid;
+  border-radius: 15px;
+  animation: neonGlow 3s linear infinite;
+  overflow: hidden;
+}
+
+@keyframes neonGlow {
+  0%,
+  100% {
+    border-color: #00f;
+    box-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f;
+  }
+  50% {
+    border-color: #0ff;
+    box-shadow: 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff, 0 0 50px #0ff;
+  }
+}
